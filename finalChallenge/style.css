@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap");
+
+:root {
+  --main-font: "Cantarell", sans-serif;
+  --nav-color: #2e323f;
+  --header-color: #3b4050;
+  --font-color: #fff;
+  --heading-fontColor: #6f737f;
+  --otherColor: #a59678;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header,
+section {
+  padding: 3rem 0;
+}
+nav {
+  background: var(--nav-color);
+  font-family: var(--main-font);
+  color: var(--font-color);
+}
+.nav-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.nav-links {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--font-color);
+}
+.nav-link {
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.btn {
+  background: var(--otherColor);
+  padding: 0.5rem 0.7rem;
+  border-radius: 15px;
+  color: var(--font-color);
+  border: 0;
+  text-transform: uppercase;
+}
+header {
+  background: var(--header-color);
+  font-family: var(--main-font);
+}
+
+header h1 {
+  color: var(--font-color);
+}
+header h1 span {
+  color: var(--otherColor);
+}
+.main-text {
+  padding-top: 1.5rem;
+  color: var(--font-color);
+}
+.main-text p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.main-btn {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Features */
+#features {
+  background: #f1f1f1;
+}
+.feature-item + .feature-item {
+  margin-top: 2rem;
+}
+.item-heading {
+  font-size: 0.9rem;
+  color: var(--otherColor);
+  margin-bottom: 1rem;
+}
